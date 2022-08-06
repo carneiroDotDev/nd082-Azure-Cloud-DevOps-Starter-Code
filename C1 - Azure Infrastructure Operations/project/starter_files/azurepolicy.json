@@ -1,0 +1,33 @@
+{
+  "displayName": "Project 1 indexed policy",
+  "description": "Indexed policy evaluates only resources types that support tags and locations",
+  "id": "/subscriptions/055225e5-24c2-4b9b-bd53-954939e76965/providers/Microsoft.Authorization/policyDefinitions/tagging-policy",
+  "metadata": {
+    "createdBy": "70ce86e7-2a3e-40f7-b3b3-f1cb13a84055",
+    "createdOn": "2022-07-31T12:19:19.3995094Z",
+    "updatedBy": "9f93f66a-4603-4589-a68f-4207a755f168",
+    "updatedOn": "2022-08-05T22:02:02.9210737Z"
+  },
+  "mode": "Indexed",
+  "name": "tagging-policy",
+  "parameters": null,
+  "policyRule": {
+    "if": {
+      "exists": "false",
+      "field": "tags"
+    },
+    "then": {
+      "effect": "deny"
+    }
+  },
+  "policyType": "Custom",
+  "systemData": {
+    "createdAt": "2022-07-31T12:19:19.363901+00:00",
+    "createdBy": "odl_user_202788@udacityhol.onmicrosoft.com",
+    "createdByType": "User",
+    "lastModifiedAt": "2022-08-05T22:02:02.902170+00:00",
+    "lastModifiedBy": "odl_user_203449@udacityhol.onmicrosoft.com",
+    "lastModifiedByType": "User"
+  },
+  "type": "Microsoft.Authorization/policyDefinitions"
+}

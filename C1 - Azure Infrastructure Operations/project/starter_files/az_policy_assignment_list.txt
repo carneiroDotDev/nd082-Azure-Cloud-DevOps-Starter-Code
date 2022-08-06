@@ -1,0 +1,60 @@
+[
+  {
+    "description": "clouddevops674-203449-PolicyDefinition",
+    "displayName": "clouddevops674-203449-PolicyDefinition",
+    "enforcementMode": "Default",
+    "id": "/subscriptions/055225e5-24c2-4b9b-bd53-954939e76965/providers/Microsoft.Authorization/policyAssignments/clouddevops674-203449-PolicyDefinition",
+    "identity": null,
+    "location": null,
+    "metadata": {
+      "createdBy": "f797eca9-5d09-44b6-b23f-98732363911c",
+      "createdOn": "2022-08-05T21:23:30.8279096Z",
+      "updatedBy": null,
+      "updatedOn": null
+    },
+    "name": "clouddevops674-203449-PolicyDefinition",
+    "nonComplianceMessages": null,
+    "notScopes": null,
+    "parameters": null,
+    "policyDefinitionId": "/subscriptions/055225e5-24c2-4b9b-bd53-954939e76965/providers/Microsoft.Authorization/policyDefinitions/clouddevops674-203449-PolicyDefinition",
+    "scope": "/subscriptions/055225e5-24c2-4b9b-bd53-954939e76965",
+    "systemData": {
+      "createdAt": "2022-08-05T21:23:30.765979+00:00",
+      "createdBy": "0609ced8-c8f7-49fd-91c2-c484ddad694d",
+      "createdByType": "Application",
+      "lastModifiedAt": "2022-08-05T21:23:30.765979+00:00",
+      "lastModifiedBy": "0609ced8-c8f7-49fd-91c2-c484ddad694d",
+      "lastModifiedByType": "Application"
+    },
+    "type": "Microsoft.Authorization/policyAssignments"
+  },
+  {
+    "description": null,
+    "displayName": null,
+    "enforcementMode": "Default",
+    "id": "/subscriptions/055225e5-24c2-4b9b-bd53-954939e76965/providers/Microsoft.Authorization/policyAssignments/EKLopeFzQ-S4sh4xmFa4mg",
+    "identity": null,
+    "location": null,
+    "metadata": {
+      "createdBy": "9f93f66a-4603-4589-a68f-4207a755f168",
+      "createdOn": "2022-08-05T22:04:10.4192737Z",
+      "updatedBy": null,
+      "updatedOn": null
+    },
+    "name": "EKLopeFzQ-S4sh4xmFa4mg",
+    "nonComplianceMessages": null,
+    "notScopes": null,
+    "parameters": null,
+    "policyDefinitionId": "/subscriptions/055225e5-24c2-4b9b-bd53-954939e76965/providers/Microsoft.Authorization/policyDefinitions/tagging-policy",
+    "scope": "/subscriptions/055225e5-24c2-4b9b-bd53-954939e76965",
+    "systemData": {
+      "createdAt": "2022-08-05T22:04:10.383511+00:00",
+      "createdBy": "odl_user_203449@udacityhol.onmicrosoft.com",
+      "createdByType": "User",
+      "lastModifiedAt": "2022-08-05T22:04:10.383511+00:00",
+      "lastModifiedBy": "odl_user_203449@udacityhol.onmicrosoft.com",
+      "lastModifiedByType": "User"
+    },
+    "type": "Microsoft.Authorization/policyAssignments"
+  }
+]

@@ -16,18 +16,44 @@ You will find in this project a complete template to deploy a customizable, scal
 
 2. Fill the variables values on the file `packer.vars.json`
 
+> Variables needed on the file `packer.vars.json`:
+| Variabe | Value | Also named |
+| ------- | ----- | ---------- |
+| client_id | 9aaf0a5c-xxx-fb51965c6077 | App ID |
+| client_secret | r4q8Qxxx4Ndlq | Azure secret id |
+| subscription_id | 0552xxx6965 | Azure subscription id |
+
+
 3. Fill the missing variables also in `variables.tf`
+
+> Variables needed on the file `variables.tf`:
+| Variabe | Value | Also named |
+| ------- | ----- | ---------- |
+| prefix | p1 | Prefix |
+| tenant_id | f958exxx6b6d07 | Udacity Lab tenant ID |
+| client_id | 9aaf0a5c-xxx-fb51965c6077 | App ID |
+| client_secret | r4q8Qxxx4Ndlq | Azure secret id |
+| subscription_id | 0552xxx6965 | Azure subscription id |
+| username | adminuser | VM username |
+| password | Password1! | VM password |
+| number_of_virtual_machines | 2 | Number of VMs |
+| location | usc | Azure Region |
 
 ### Instructions
 1. Have a look on the file named `azurepolicy.rules.json`
+> Attention that only tagged resource will be allowed
 
 2. Deploy the policy with `packer build -var-file=packer.vars.json server.json`
+> Afterward `az policy assignment list` should list the policy
 
-3. `terraform plan -out solution.plan` shall give an overview about the infrastructure to be build.
+3. `terraform plan -out solution.plan` shall give an overview about the infrastructure to be build
+> An example can be seen on the `solution.plan` file stored in this repo
 
 4. `terraform apply` will create the whole infrastructure in Azure
+> A success full message for this template should look like: `Apply complete! Resources: 17 added, 0 changed, 0 destroyed.` 
 
 5. `terraform destroy` will destroy the whole infrastructure
+> :warning: **Destroy all unused ressources in Azure to avoid unwanted costs!**
 
 ### Output
 > This is how the output of `terraform show` will look like after deployment:
